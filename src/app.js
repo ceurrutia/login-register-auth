@@ -4,6 +4,7 @@ import cookieParser from 'cookie-parser'
 
 
 import authRoutes from './routes/auth.routes.js'
+import museumRoutes from './routes/museum.routes.js'
 
 const app = express()
 
@@ -13,5 +14,6 @@ app.use(cookieParser())
 
 
 app.use('/api', authRoutes)
+app.use('/api', museumRoutes)
 
 export default app;
