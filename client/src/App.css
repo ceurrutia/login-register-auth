@@ -1,0 +1,47 @@
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+html{
+  box-sizing: border-box;
+  
+}
+
+body{
+  color:rgb(77, 77, 77);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif!important;
+}
+
+h1{
+  text-align: center;
+}
+
+tr, td{
+  font-size:17px!important;
+  text-align: center;
+}
+
+.btn-primary{
+  background-color: rgb(84, 84, 114)!important;
+  border:rgb(84, 84, 114)!important;
+  color:aliceblue;
+}
+
+.container-fluid{
+  width: 50%!important;
+  height: 100vh;
+  font-size: 1.2em;
+ 
+}
+
+.container-table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:30px;
+}
+
+.red{
+  color:red;
+  font-size: 0.9em;
+}

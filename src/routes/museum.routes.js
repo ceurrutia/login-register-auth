@@ -12,7 +12,7 @@ import { createMuseumSchema } from "../schemas/museum.schema.js";
 
 const router = Router();
 
-router.get("/museums", authRequired, getMuseums);
+router.get("/museums",  getMuseums);
 
 router.get("/museum/:id", authRequired, getMuseum);
 
