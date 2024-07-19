@@ -3,7 +3,8 @@ import Button from "react-bootstrap/Button";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../context/AuthContext";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+
 
 function RegisterPage() {
   const {
@@ -64,8 +65,10 @@ function RegisterPage() {
             Register
           </Button>{" "}
         </Form>
+        <p > Already have an account? <Link to="/login">Sign Up </Link>  </p>
+        </div>
       </div>
-    </div>
+    
   );
 }
 

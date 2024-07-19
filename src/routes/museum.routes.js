@@ -27,4 +27,9 @@ router.delete("/museum/:id", authRequired, deleteMuseum);
 
 router.put("/museum/:id", authRequired, updateMuseum);
 
+router.post("/signout", authRequired, (req, res) => {
+  res.clearCookie('token');
+  res.status(200).json({ message: "Signout successful" });
+});
+
 export default router;
